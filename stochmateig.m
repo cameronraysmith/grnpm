@@ -3,7 +3,7 @@
 
 %% Initialize parameters (uncomment to run as script)
 
-N=100000;
+N=10000;
 dim=3;
 colsum = 1;
 elmin=0;
@@ -16,7 +16,11 @@ eV=zeros(dim,N);
 for i=1:N
     ss(:,:,i)=randfixedsum(dim,dim,colsum,elmin,elmax);
     [V D]=eig(ss(:,:,i));
-    eV(:,i) = V(:,1);
+    [~,J]=find(D>0.99 & D<1.00001);
+    if length(J)~=1
+        error('no or more than one eigenvalue equal to 1');
+    end
+    eV(:,i) = V(:,J);
 end
 
 % Settings
@@ -28,10 +32,9 @@ scrsz = get(0,'ScreenSize');
 
 % Plot data
 %-------------------------------
-%if opensavefigFlag
-%    h=figure('Visible','off','Position',[0 0 scrsz(3)/4.5 scrsz(4)/1.4]); set(h,'Color','w');
-%else
-    h=figure('Position',[0 0 scrsz(3)/4.5 scrsz(4)/1.4]); set(h,'Color','w');
-
+h1=figure('Position',[0 0 scrsz(3)/4.5 scrsz(4)/1.4]); set(h1,'Color','w');
 scatter3(eV(1,:)',eV(2,:)',eV(3,:)',5,'r');
-%plot3(eV(1,:)',eV(2,:)',eV(3,:)');
+h2=figure('Position',[0 scrsz(4)/1.4 scrsz(3)/4.5 scrsz(4)/1.4]); set(h2,'Color','w');
+plot(1:length(sum(eV,1)), sum(eV,1),'k.')
+fprintf('\nnumber of Perron vector sums greater than 0: %0.0f\n',length(find(sum(eV,1)>0)));
+fprintf('number of Perron vector sums less than 0: %0.0f\n\n',length(find(sum(eV,1)<0)));
