@@ -1,0 +1,193 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      6096,        183]
+NotebookOptionsPosition[      5750,        166]
+NotebookOutlinePosition[      6087,        181]
+CellTagsIndexPosition[      6044,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox[
+     SubscriptBox["\[Sigma]", "\[Infinity]"], "2"], "==", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[Lambda]", "2"], 
+      FractionBox["1", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox["1", 
+          SuperscriptBox[
+           SubscriptBox["\[Sigma]", "\[Infinity]"], "2"]], "+", 
+         FractionBox["1", 
+          SuperscriptBox[
+           SubscriptBox["\[Sigma]", "S"], "2"]]}], ")"}]]}], "+", 
+     SuperscriptBox[
+      SubscriptBox["\[Sigma]", "H"], "2"]}]}], ",", 
+   SubscriptBox["\[Sigma]", "\[Infinity]"]}], "]"}]], "Input",
+ CellChangeTimes->{{3.602337989431963*^9, 3.602338004710698*^9}, {
+  3.602338131076661*^9, 3.602338215768407*^9}, {3.602338254716242*^9, 
+  3.6023385875473337`*^9}, {3.602338781170453*^9, 3.602338784866953*^9}, {
+  3.602339023577998*^9, 3.6023390426649446`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Sigma]", "\[Infinity]"], "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox[
+       SqrtBox[
+        RowBox[{
+         SubsuperscriptBox["\[Sigma]", "H", "2"], "-", 
+         SubsuperscriptBox["\[Sigma]", "S", "2"], "+", 
+         RowBox[{
+          SuperscriptBox["\[Lambda]", "2"], " ", 
+          SubsuperscriptBox["\[Sigma]", "S", "2"]}], "-", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"4", " ", 
+            SubsuperscriptBox["\[Sigma]", "H", "2"], " ", 
+            SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SubsuperscriptBox["\[Sigma]", "H", "2"]}], "+", 
+              SubsuperscriptBox["\[Sigma]", "S", "2"], "-", 
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], " ", 
+               SubsuperscriptBox["\[Sigma]", "S", "2"]}]}], ")"}], "2"]}]]}]], 
+       SqrtBox["2"]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Sigma]", "\[Infinity]"], "\[Rule]", 
+     FractionBox[
+      SqrtBox[
+       RowBox[{
+        SubsuperscriptBox["\[Sigma]", "H", "2"], "-", 
+        SubsuperscriptBox["\[Sigma]", "S", "2"], "+", 
+        RowBox[{
+         SuperscriptBox["\[Lambda]", "2"], " ", 
+         SubsuperscriptBox["\[Sigma]", "S", "2"]}], "-", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"4", " ", 
+           SubsuperscriptBox["\[Sigma]", "H", "2"], " ", 
+           SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SubsuperscriptBox["\[Sigma]", "H", "2"]}], "+", 
+             SubsuperscriptBox["\[Sigma]", "S", "2"], "-", 
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              SubsuperscriptBox["\[Sigma]", "S", "2"]}]}], ")"}], "2"]}]]}]], 
+      
+      SqrtBox["2"]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Sigma]", "\[Infinity]"], "\[Rule]", 
+     RowBox[{"-", 
+      FractionBox[
+       SqrtBox[
+        RowBox[{
+         SubsuperscriptBox["\[Sigma]", "H", "2"], "-", 
+         SubsuperscriptBox["\[Sigma]", "S", "2"], "+", 
+         RowBox[{
+          SuperscriptBox["\[Lambda]", "2"], " ", 
+          SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"4", " ", 
+            SubsuperscriptBox["\[Sigma]", "H", "2"], " ", 
+            SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", 
+               SubsuperscriptBox["\[Sigma]", "H", "2"]}], "+", 
+              SubsuperscriptBox["\[Sigma]", "S", "2"], "-", 
+              RowBox[{
+               SuperscriptBox["\[Lambda]", "2"], " ", 
+               SubsuperscriptBox["\[Sigma]", "S", "2"]}]}], ")"}], "2"]}]]}]], 
+       SqrtBox["2"]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Sigma]", "\[Infinity]"], "\[Rule]", 
+     FractionBox[
+      SqrtBox[
+       RowBox[{
+        SubsuperscriptBox["\[Sigma]", "H", "2"], "-", 
+        SubsuperscriptBox["\[Sigma]", "S", "2"], "+", 
+        RowBox[{
+         SuperscriptBox["\[Lambda]", "2"], " ", 
+         SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"4", " ", 
+           SubsuperscriptBox["\[Sigma]", "H", "2"], " ", 
+           SubsuperscriptBox["\[Sigma]", "S", "2"]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", 
+              SubsuperscriptBox["\[Sigma]", "H", "2"]}], "+", 
+             SubsuperscriptBox["\[Sigma]", "S", "2"], "-", 
+             RowBox[{
+              SuperscriptBox["\[Lambda]", "2"], " ", 
+              SubsuperscriptBox["\[Sigma]", "S", "2"]}]}], ")"}], "2"]}]]}]], 
+      
+      SqrtBox["2"]]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.602338487992144*^9, 3.602338538605867*^9}, 
+   3.602338592844178*^9, 3.602338799688901*^9, 3.602339044674801*^9}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.602338915507057*^9}]
+},
+WindowSize->{960, 1148},
+WindowMargins->{{954, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 907, 24, 77, "Input"],
+Cell[1489, 48, 4155, 112, 397, "Output"]
+}, Open  ]],
+Cell[5659, 163, 87, 1, 55, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
