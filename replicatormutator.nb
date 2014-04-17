@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     28307,        763]
-NotebookOptionsPosition[     27579,        738]
-NotebookOutlinePosition[     27916,        753]
-CellTagsIndexPosition[     27873,        750]
+NotebookDataLength[     28525,        766]
+NotebookOptionsPosition[     27797,        741]
+NotebookOutlinePosition[     28134,        756]
+CellTagsIndexPosition[     28091,        753]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -369,7 +369,7 @@ Cell[BoxData[
      RowBox[{"ImageSize", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{"400", ",", "275"}], "}"}]}], ",", 
-     RowBox[{"ColorFunction", "\[Rule]", "\"\<Rainbow\>\""}], ",", 
+     RowBox[{"ColorFunction", "\[Rule]", "\"\<DarkRainbow\>\""}], ",", 
      RowBox[{"RegionFunction", "\[Rule]", 
       RowBox[{"Function", "[", 
        RowBox[{
@@ -410,7 +410,7 @@ Cell[BoxData[
    3.606688829495986*^9}, {3.606688871149157*^9, 3.60668888192255*^9}, 
    3.606688956094413*^9, {3.606692002414535*^9, 3.606692005342566*^9}, {
    3.606692044806368*^9, 3.606692051109482*^9}, {3.606692115690633*^9, 
-   3.606692143706623*^9}}],
+   3.606692143706623*^9}, {3.606694728183669*^9, 3.6066947286944227`*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -451,7 +451,9 @@ Cell[BoxData[
       RowBox[{"Graphics", "[", 
        RowBox[{"{", 
         RowBox[{
-         RowBox[{"EdgeForm", "[", "Thick", "]"}], ",", "Red", ",", 
+         RowBox[{"EdgeForm", "[", 
+          RowBox[{"{", 
+           RowBox[{"Thick", ",", "Gray"}], "}"}], "]"}], ",", "Gray", ",", 
          RowBox[{
           RowBox[{"(", 
            RowBox[{
@@ -533,7 +535,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.6066890154652042`*^9, 3.606689016645052*^9}, {
   3.606689065591126*^9, 3.606689066089663*^9}, {3.606691732023683*^9, 
   3.606691732613896*^9}, {3.606691772615575*^9, 3.606691772711563*^9}, {
-  3.606691808874732*^9, 3.606691812856267*^9}}],
+  3.606691808874732*^9, 3.606691812856267*^9}, {3.606694772296865*^9, 
+  3.6066947727877283`*^9}, {3.6066948174670877`*^9, 3.606694821698166*^9}}],
 
 Cell[BoxData[
  RowBox[{"Show", "[", 
@@ -759,12 +762,12 @@ Cell[8456, 239, 1219, 28, 130, "Input"],
 Cell[9678, 269, 1223, 28, 142, "Input"],
 Cell[10904, 299, 1319, 32, 99, "Input"],
 Cell[12226, 333, 722, 14, 55, "Input"],
-Cell[12951, 349, 2310, 63, 300, "Input"],
-Cell[15264, 414, 1159, 27, 77, "Input"],
-Cell[16426, 443, 3448, 92, 265, "Input"],
-Cell[19877, 537, 3160, 88, 242, "Input"],
-Cell[23040, 627, 458, 9, 32, "Input"],
-Cell[23501, 638, 4074, 98, 275, "Input"]
+Cell[12951, 349, 2362, 63, 300, "Input"],
+Cell[15316, 414, 1159, 27, 77, "Input"],
+Cell[16478, 443, 3614, 95, 287, "Input"],
+Cell[20095, 540, 3160, 88, 242, "Input"],
+Cell[23258, 630, 458, 9, 32, "Input"],
+Cell[23719, 641, 4074, 98, 275, "Input"]
 }
 ]
 *)
