@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[      9062,        266]
-NotebookOptionsPosition[      8477,        244]
-NotebookOutlinePosition[      8814,        259]
-CellTagsIndexPosition[      8771,        256]
+NotebookDataLength[      6576,        194]
+NotebookOptionsPosition[      6110,        175]
+NotebookOutlinePosition[      6447,        190]
+CellTagsIndexPosition[      6404,        187]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -105,145 +105,76 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"ExpToTrig", "[", 
+  RowBox[{"FullSimplify", "[", 
    RowBox[{
     RowBox[{
-     RowBox[{"dnjn0", "[", 
-      RowBox[{"[", "2", "]"}], "]"}], "[", 
-     RowBox[{"[", "1", "]"}], "]"}], "[", 
-    RowBox[{"[", "2", "]"}], "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{
-  3.606855225397505*^9, {3.6068552613242073`*^9, 3.606855386354364*^9}, {
-   3.6068554867418537`*^9, 3.60685549741472*^9}, {3.6068564651576643`*^9, 
-   3.6068564699105597`*^9}, {3.606856780655224*^9, 3.606856783334402*^9}, {
-   3.606856831105567*^9, 3.6068568429931927`*^9}}],
+     RowBox[{"(", 
+      RowBox[{"MDNJ", "/.", 
+       RowBox[{"dnjn0", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ")"}], "\[Equal]", 
+     RowBox[{
+      FractionBox["N", "g"], 
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"2", 
+         RowBox[{"Sinh", "[", 
+          FractionBox[
+           RowBox[{"\[Xi]", "-", "\[Lambda]"}], "2"], "]"}], 
+         RowBox[{"Sinh", "[", 
+          RowBox[{
+           FractionBox["J", "2"], "\[Xi]"}], "]"}]}], 
+        RowBox[{"Sinh", "[", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"J", "-", "1"}], "2"], "\[Xi]"}], "]"}]], ")"}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Xi]", " ", ">", "0"}], ",", 
+      RowBox[{"\[Lambda]", ">", "0"}], ",", 
+      RowBox[{"J", "\[GreaterEqual]", "2"}]}], "  ", "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607016187142702*^9, 3.607016195524781*^9}}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"FullSimplify", "[", 
    RowBox[{
     RowBox[{
-     RowBox[{
-      RowBox[{"dnjn0", "[", 
-       RowBox[{"[", "2", "]"}], "]"}], "[", 
-      RowBox[{"[", "1", "]"}], "]"}], "[", 
-     RowBox[{"[", "2", "]"}], "]"}], "\[Equal]", 
-    RowBox[{
-     FractionBox["N", "g"], 
      RowBox[{"(", 
-      FractionBox[
-       RowBox[{"2", 
-        RowBox[{"Sinh", "[", 
-         FractionBox[
-          RowBox[{"\[Xi]", "-", "\[Lambda]"}], "2"], "]"}], 
+      RowBox[{"MDNJ", "/.", 
+       RowBox[{"dnjn0", "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ")"}], "\[Equal]", 
+     RowBox[{
+      FractionBox["N", "g"], 
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{"2", 
+         RowBox[{"Sinh", "[", 
+          FractionBox[
+           RowBox[{"\[Xi]", "-", "\[Lambda]"}], "2"], "]"}], 
+         RowBox[{"Sinh", "[", 
+          RowBox[{
+           FractionBox["J", "2"], "\[Xi]"}], "]"}]}], 
         RowBox[{"Sinh", "[", 
          RowBox[{
-          FractionBox["J", "2"], "\[Xi]"}], "]"}]}], 
-       RowBox[{"Sinh", "[", 
-        RowBox[{
-         FractionBox[
-          RowBox[{"J", "-", "1"}], "2"], "\[Xi]"}], "]"}]], ")"}]}]}], "]"}], 
+          FractionBox[
+           RowBox[{"J", "-", "1"}], "2"], "\[Xi]"}], "]"}]], ")"}]}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"\[Xi]", " ", ">", "0"}], ",", 
+      RowBox[{"\[Lambda]", ">", "0"}], ",", 
+      RowBox[{"J", "\[GreaterEqual]", "2"}]}], "  ", "}"}]}], "]"}], 
   "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.606854142538006*^9, 3.606854151455946*^9}, {
    3.606855603474378*^9, 3.606855678514749*^9}, {3.6068559727979107`*^9, 
    3.60685597674809*^9}, 3.606856458282336*^9, {3.606856593566605*^9, 
    3.606856595391449*^9}, {3.606856654139209*^9, 3.606856655280443*^9}, {
-   3.606856766065407*^9, 3.606856767441456*^9}, 3.606856931043717*^9}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   FractionBox[
-    RowBox[{
-     SuperscriptBox["\[ExponentialE]", 
-      RowBox[{
-       RowBox[{"-", "\[Lambda]"}], "/", "2"}]], " ", 
-     RowBox[{"(", 
-      RowBox[{
-       SuperscriptBox["\[ExponentialE]", "\[Lambda]"], "-", 
-       SuperscriptBox["\[ExponentialE]", "\[Xi]"]}], ")"}], " ", 
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{"-", "1"}], "+", 
-       SuperscriptBox[
-        RowBox[{"(", 
-         SuperscriptBox["\[ExponentialE]", "\[Xi]"], ")"}], "J"]}], ")"}]}], 
-    RowBox[{
-     SuperscriptBox["\[ExponentialE]", "\[Xi]"], "-", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       SuperscriptBox["\[ExponentialE]", "\[Xi]"], ")"}], "J"]}]], "\[Equal]", 
-   RowBox[{"(", 
-    FractionBox[
-     RowBox[{"2", 
-      RowBox[{"Sinh", "[", 
-       FractionBox[
-        RowBox[{"\[Xi]", "-", "\[Lambda]"}], "2"], "]"}], 
-      RowBox[{"Sinh", "[", 
-       RowBox[{
-        FractionBox["J", "2"], "\[Xi]"}], "]"}]}], 
-     RowBox[{"Sinh", "[", 
-      RowBox[{
-       FractionBox[
-        RowBox[{"J", "-", "1"}], "2"], "\[Xi]"}], "]"}]], ")"}]}], "/.", 
-  RowBox[{"{", 
-   RowBox[{
-    RowBox[{"\[Lambda]", "\[Rule]", "1"}], ",", 
-    RowBox[{"\[Xi]", "\[Rule]", "2"}], ",", 
-    RowBox[{"J", "\[Rule]", " ", "2"}]}], "}"}]}]], "Input",
- CellChangeTimes->{{3.606856209865591*^9, 3.606856295361279*^9}, 
-   3.606856625853344*^9}],
-
-Cell[BoxData[{
- RowBox[{"TrigToExp", "[", 
-  RowBox[{"Sinh", "[", 
-   FractionBox[
-    RowBox[{"\[Xi]", "-", "\[Lambda]"}], "2"], "]"}], 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"TrigToExp", "[", 
-  RowBox[{"Sinh", "[", 
-   RowBox[{
-    FractionBox["J", "2"], "\[Xi]"}], "]"}], "]"}], "\[IndentingNewLine]", 
- RowBox[{"TrigToExp", "[", 
-  RowBox[{"Sinh", "[", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"J", "-", "1"}], "2"], "\[Xi]"}], "]"}], "]"}]}], "Input",
- CellChangeTimes->{{3.606855530386158*^9, 3.606855575014779*^9}, {
-  3.6068556961401243`*^9, 3.606855737790412*^9}, {3.60685577720121*^9, 
-  3.6068558287406187`*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"elnjn02", "=", 
-   RowBox[{"Eliminate", "[", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{
-        FractionBox["N", "N0"], "==", 
-        FractionBox[
-         RowBox[{"1", "-", 
-          RowBox[{"x", " ", 
-           FractionBox["NJ", "N0"]}]}], 
-         RowBox[{"1", "-", "x"}]]}], ",", 
-       RowBox[{"NJ", "\[Equal]", 
-        RowBox[{
-         SuperscriptBox["x", "J"], "N0"}]}], ",", 
-       RowBox[{"MDNJ", " ", "\[Equal]", 
-        RowBox[{"(", 
-         RowBox[{"NJ", "-", "N0"}], ")"}]}]}], "}"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"NJ", ",", "N0"}], "}"}]}], "]"}]}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.606857518936129*^9, 3.606857527642837*^9}, {
-   3.6068575709072447`*^9, 3.6068576359349337`*^9}, {3.606857679138446*^9, 
-   3.606857717678604*^9}, {3.606857760579898*^9, 3.606857762834998*^9}, {
-   3.606857802998507*^9, 3.6068578087568283`*^9}, {3.606857870283155*^9, 
-   3.606857911340064*^9}, 3.606858028220182*^9, 3.6068581027699547`*^9}]
+   3.606856766065407*^9, 3.606856767441456*^9}, 3.606856931043717*^9, {
+   3.6070159861968737`*^9, 3.6070159950439*^9}, {3.607016080186304*^9, 
+   3.6070161589766693`*^9}}]
 },
 WindowSize->{960, 1148},
-WindowMargins->{{954, Automatic}, {Automatic, 0}},
+WindowMargins->{{946, Automatic}, {Automatic, 0}},
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
 StyleDefinitions->"Default.nb"
 ]
@@ -263,11 +194,8 @@ Cell[880, 30, 698, 19, 88, "Input"],
 Cell[1581, 51, 476, 11, 55, "Input"],
 Cell[2060, 64, 1231, 27, 59, "Input"],
 Cell[3294, 93, 429, 10, 55, "Input"],
-Cell[3726, 105, 566, 13, 55, "Input"],
-Cell[4295, 120, 1119, 30, 110, "Input"],
-Cell[5417, 152, 1379, 42, 82, "Input"],
-Cell[6799, 196, 630, 17, 154, "Input"],
-Cell[7432, 215, 1041, 27, 94, "Input"]
+Cell[3726, 105, 992, 30, 110, "Input"],
+Cell[4721, 137, 1385, 36, 110, "Input"]
 }
 ]
 *)
