@@ -10,14 +10,38 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     44479,       1210]
-NotebookOptionsPosition[     28814,        879]
-NotebookOutlinePosition[     43341,       1181]
-CellTagsIndexPosition[     43298,       1178]
+NotebookDataLength[     53535,       1481]
+NotebookOptionsPosition[     37246,       1123]
+NotebookOutlinePosition[     51613,       1422]
+CellTagsIndexPosition[     51570,       1419]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["Doi - Peliti method", "Title",
+ CellFrame->{{0, 0}, {0, 0.5}},
+ CellChangeTimes->{{3.607352245888824*^9, 3.6073522688479033`*^9}, 
+   3.6073524350151367`*^9, 3.607352477668803*^9, 3.607358172479334*^9}],
+
+Cell["\<\
+Cameron Smith
+April 23rd, 2014\
+\>", "Text",
+ CellChangeTimes->{{3.607353113209445*^9, 3.607353129419222*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Section"],
+ " Load the Package\n"
+}], "Section",
+ CellFrame->{{0, 0}, {0, 3}},
+ CellChangeTimes->{{3.607352309505045*^9, 3.607352362529078*^9}, {
+  3.607353482435014*^9, 3.6073534847259893`*^9}}],
+
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<Quantum`Notation`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.60729501723009*^9, 3.6072950308722343`*^9}, {
@@ -28,7 +52,18 @@ Cell[BoxData[
   RowBox[{"SetQuantumAliases", "[", "]"}], ";"}]], "Input",
  CellChangeTimes->{
   3.6072955774456263`*^9, {3.607295622988784*^9, 3.607295627748412*^9}, 
-   3.60729639794248*^9}],
+   3.60729639794248*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Section"],
+ " Define creation and annihilation operators"
+}], "Section",
+ CellChangeTimes->{{3.607352462884348*^9, 3.607352471812532*^9}, 
+   3.607353488229973*^9}],
 
 Cell[BoxData[
  RowBox[{"DefineOperatorOnKets", "[", 
@@ -144,65 +179,9 @@ Cell[BoxData[
    Selectable->False], "=", "1"}]], "Input",
  CellChangeTimes->{{3.607298618294282*^9, 3.607298625038619*^9}}],
 
-Cell[BoxData[
- RowBox[{
-  TagBox[
-   RowBox[{"\[LeftAngleBracket]", 
-    TagBox["0",
-     Quantum`Notation`zz080BraArgs,
-     BaseStyle->{ShowSyntaxStyles -> True},
-     Editable->True,
-     Selectable->True], "\[VerticalSeparator]"}],
-   Quantum`Notation`zz080Bra,
-   BaseStyle->{ShowSyntaxStyles -> False},
-   Editable->False,
-   Selectable->False], "\[CenterDot]", 
-  SuperscriptBox["a", "k"], "\[CenterDot]", 
-  SuperscriptBox["a", 
-   RowBox[{"\[Dagger]", " ", "k"}]], "\[CenterDot]", 
-  TagBox[
-   RowBox[{"\[VerticalSeparator]", 
-    TagBox["0",
-     Quantum`Notation`zz080KetArgs,
-     BaseStyle->{ShowSyntaxStyles -> True},
-     Editable->True,
-     Selectable->True], "\[RightAngleBracket]"}],
-   Quantum`Notation`zz080Ket,
-   BaseStyle->{ShowSyntaxStyles -> False},
-   Editable->False,
-   Selectable->False]}]], "Input",
- CellChangeTimes->{{3.607298066013795*^9, 3.6072980675987263`*^9}, {
-  3.607302622622794*^9, 3.607302622630986*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  TagBox[
-   RowBox[{"\[LeftAngleBracket]", 
-    TagBox["0",
-     Quantum`Notation`zz080BraArgs,
-     BaseStyle->{ShowSyntaxStyles -> True},
-     Editable->True,
-     Selectable->True], "\[VerticalSeparator]"}],
-   Quantum`Notation`zz080Bra,
-   BaseStyle->{ShowSyntaxStyles -> False},
-   Editable->False,
-   Selectable->False], "\[CenterDot]", 
-  SuperscriptBox["a", "k"], "\[CenterDot]", 
-  SuperscriptBox[
-   RowBox[{"(", 
-    SuperscriptBox["a", "\[Dagger]"], ")"}], "k"], "\[CenterDot]", 
-  TagBox[
-   RowBox[{"\[VerticalSeparator]", 
-    TagBox["0",
-     Quantum`Notation`zz080KetArgs,
-     BaseStyle->{ShowSyntaxStyles -> True},
-     Editable->True,
-     Selectable->True], "\[RightAngleBracket]"}],
-   Quantum`Notation`zz080Ket,
-   BaseStyle->{ShowSyntaxStyles -> False},
-   Editable->False,
-   Selectable->False]}]], "Input",
- CellChangeTimes->{{3.607302622636788*^9, 3.607302622670834*^9}}],
+Cell["Matrix representation", "Text",
+ CellChangeTimes->{{3.60735265852267*^9, 3.607352675242634*^9}, {
+  3.607352771887824*^9, 3.607352775150772*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -240,133 +219,40 @@ Cell[BoxData[{
  RowBox[{"MatrixForm", "[", "mymatrix", 
   "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.60729832559769*^9, 3.6072983261692142`*^9}, {
-  3.607302637060513*^9, 3.6073026402953987`*^9}}],
+  3.607302637060513*^9, 3.6073026402953987`*^9}}]
+}, Open  ]],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Expand", "[", 
-   SuperscriptBox[
-    RowBox[{"(", 
-     RowBox[{"a", "+", 
-      SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607298402101775*^9, 3.607298415065564*^9}}],
+Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"CommutatorExpand", "[", 
-   SuperscriptBox[
-    RowBox[{"(", 
-     RowBox[{"a", "+", 
-      SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.6072984533168*^9, 3.607298454331094*^9}}],
+Cell[TextData[{
+ 
+ CounterBox["Section"],
+ " Compute solutions for A \[RightArrow]\[EmptySet]"
+}], "Section",
+ CellChangeTimes->{{3.6073525102461863`*^9, 3.6073525532549477`*^9}, 
+   3.6073534899420013`*^9}],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"CommutatorExpand", "[", 
-   RowBox[{
-    SuperscriptBox[
-     RowBox[{"(", 
-      RowBox[{"a", "+", 
-       SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], ",", 
-    RowBox[{"ReverseOrdering", "\[Rule]", "True"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607298515509519*^9, 3.60729851601367*^9}}],
+Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"EvaluateCommutators", "[", 
-   RowBox[{"(", 
-    RowBox[{
-     SuperscriptBox["a", "2"], "-", 
-     TagBox[
-      SubscriptBox[
-       RowBox[{"\[LeftDoubleBracket]", 
-        TagBox[
-         RowBox[{
-          SuperscriptBox["a", "\[Dagger]"], ",", "a"}],
-         Quantum`Notation`zz080KetArgs,
-         Editable->True,
-         Selectable->True], "\[RightDoubleBracket]"}], "-"],
-      Quantum`Notation`zz050Commutator,
-      Editable->False,
-      Selectable->False], "+", 
-     RowBox[{"2", " ", 
-      RowBox[{
-       SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}]}], "+", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       SuperscriptBox["a", "\[Dagger]"], ")"}], "2"]}], ")"}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607298533430771*^9, 3.607298533966893*^9}}],
+Cell[TextData[{
+ 
+ CounterBox["Subsection"],
+ " Approximate solutions (automatic)"
+}], "Subsection",
+ CellChangeTimes->{{3.607352935208346*^9, 3.607352945269039*^9}, {
+  3.607352995702262*^9, 3.607353017558169*^9}, {3.6073531745563602`*^9, 
+  3.607353187355769*^9}, {3.607353501942498*^9, 3.6073535215748453`*^9}}],
 
-Cell[BoxData[
- RowBox[{"TeXForm", "[", 
-  RowBox[{"TraditionalForm", "[", 
-   RowBox[{"CommutatorExpand", "[", 
-    SuperscriptBox[
-     RowBox[{"(", 
-      RowBox[{"a", "+", 
-       SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], "]"}], "]"}], 
-  "]"}]], "Input",
- CellChangeTimes->{{3.60729857186423*^9, 3.607298573036969*^9}, 
-   3.607298755109778*^9}],
+Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   SuperscriptBox[
-    RowBox[{"(", 
-     RowBox[{"a", "+", 
-      SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], "\[CenterDot]", 
-   TagBox[
-    RowBox[{"\[VerticalSeparator]", 
-     TagBox["k",
-      Quantum`Notation`zz080KetArgs,
-      BaseStyle->{ShowSyntaxStyles -> True},
-      Editable->True,
-      Selectable->True], "\[RightAngleBracket]"}],
-    Quantum`Notation`zz080Ket,
-    BaseStyle->{ShowSyntaxStyles -> False},
-    Editable->False,
-    Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.60729876776336*^9, 3.607298768388969*^9}, {
-  3.607302649444628*^9, 3.607302667109023*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Collect", "[", 
-   RowBox[{
-    RowBox[{
-     SuperscriptBox[
-      RowBox[{"(", 
-       RowBox[{"a", "+", 
-        SuperscriptBox["a", "\[Dagger]"]}], ")"}], "2"], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["k",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    TagBox[
-     RowBox[{"\[VerticalSeparator]", 
-      TagBox["k",
-       Quantum`Notation`zz080KetArgs,
-       BaseStyle->{ShowSyntaxStyles -> True},
-       Editable->True,
-       Selectable->True], "\[RightAngleBracket]"}],
-     Quantum`Notation`zz080Ket,
-     BaseStyle->{ShowSyntaxStyles -> False},
-     Editable->False,
-     Selectable->False]}], "]"}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607298782110208*^9, 3.607298782806106*^9}, {
-  3.607302674822864*^9, 3.6073026765825243`*^9}}],
+Cell[TextData[{
+ 
+ CounterBox["Subsubsection"],
+ " Compute approximations of exponentials of operators"
+}], "Subsubsection",
+ CellChangeTimes->{{3.607352609337884*^9, 3.607352623130288*^9}, {
+  3.607352853601635*^9, 3.607352857250181*^9}, {3.607352948407754*^9, 
+  3.607352953913672*^9}, {3.607353541331315*^9, 3.607353542648335*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -381,24 +267,6 @@ Cell[BoxData[
  CellChangeTimes->{{3.607300940811406*^9, 3.607300956509193*^9}, {
   3.60730504731474*^9, 3.6073050474109373`*^9}, {3.607338995824602*^9, 
   3.607338996159452*^9}, {3.607339283016055*^9, 3.6073392831913023`*^9}}],
-
-Cell[BoxData[
- RowBox[{"ME2", "=", 
-  RowBox[{"Expand", "[", 
-   RowBox[{"ME", "/.", 
-    RowBox[{"a", "\[Rule]", " ", 
-     RowBox[{
-      FractionBox[
-       RowBox[{"-", "t"}], "\[Tau]"], 
-      RowBox[{"(", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-", "a"}], 
-       ")"}]}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6073050504630947`*^9, 3.607305062658971*^9}, {
-   3.607305139333399*^9, 3.607305139429799*^9}, {3.607305363646296*^9, 
-   3.60730538366378*^9}, 3.60730546091428*^9, {3.607305719658143*^9, 
-   3.607305793020907*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -427,6 +295,400 @@ Cell[BoxData[
     Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.607300971100095*^9, 3.607301068416277*^9}, {
   3.607302591059327*^9, 3.6073025947234697`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"ME2", "=", 
+  RowBox[{"Expand", "[", 
+   RowBox[{"ME", "/.", 
+    RowBox[{"a", "\[Rule]", " ", 
+     RowBox[{
+      FractionBox[
+       RowBox[{"-", "t"}], "\[Tau]"], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-", "a"}], 
+       ")"}]}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6073050504630947`*^9, 3.607305062658971*^9}, {
+   3.607305139333399*^9, 3.607305139429799*^9}, {3.607305363646296*^9, 
+   3.60730538366378*^9}, 3.60730546091428*^9, {3.607305719658143*^9, 
+   3.607305793020907*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Subsubsection"],
+ " Approximate solutions using truncated expansions of exponentials of \
+operators"
+}], "Subsubsection",
+ CellChangeTimes->{{3.607352889490678*^9, 3.607352900994454*^9}, 
+   3.6073535459277973`*^9}],
+
+Cell["First moment", "Text",
+ CellChangeTimes->{{3.6073533736023703`*^9, 3.6073533751222687`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
+     SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a", "\[CenterDot]", 
+     "ME2", "\[CenterDot]", 
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607305167569152*^9, 3.607305314509441*^9}, {
+  3.607305475777125*^9, 3.607305547171221*^9}, {3.607305602920228*^9, 
+  3.6073056142632313`*^9}, {3.6073056589216948`*^9, 3.607305660010035*^9}, {
+  3.607305694552266*^9, 3.607305695498575*^9}, {3.607305813870496*^9, 
+  3.607305830975171*^9}, {3.607338305612447*^9, 3.607338317657853*^9}, {
+  3.607338429327017*^9, 3.60733842942304*^9}, {3.607339292153142*^9, 
+  3.607339292184537*^9}, {3.607356274917585*^9, 3.607356276881139*^9}}],
+
+Cell["Second moment", "Text",
+ CellChangeTimes->{{3.6073533831059723`*^9, 3.607353385410308*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "2"], 
+     "\[CenterDot]", "ME2", "\[CenterDot]", 
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607306053596581*^9, 3.6073060624685497`*^9}, {
+  3.607339295115649*^9, 3.6073392951800528`*^9}}],
+
+Cell["Third moment", "Text",
+ CellChangeTimes->{{3.607353388450983*^9, 3.607353390146659*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "3"], 
+     "\[CenterDot]", "ME2", "\[CenterDot]", 
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607306487063862*^9, 3.6073064982450666`*^9}, {
+  3.607339296875915*^9, 3.607339296922768*^9}}],
+
+Cell["\<\
+First moment using infinite and truncated series representation\
+\>", "Text",
+ CellChangeTimes->{{3.607358984029784*^9, 3.6073590153556957`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{"Expand", "[", 
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       StyleBox[
+        FractionBox[
+         SuperscriptBox[
+          RowBox[{"(", "a", ")"}], "k"], 
+         RowBox[{"k", "!"}]],
+        FontSize->8], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+     "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "1"], 
+     "\[CenterDot]", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       StyleBox[
+        FractionBox[
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"t", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-",
+                 "a"}], ")"}]}], "\[Tau]"]}], ")"}], "k"], 
+         RowBox[{"k", "!"}]],
+        FontSize->8], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+     "\[CenterDot]", 
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607355841862645*^9, 3.607355865561607*^9}, {
+  3.607355906013893*^9, 3.607355941521388*^9}, {3.607355978942143*^9, 
+  3.607355995555956*^9}, {3.607356440371355*^9, 3.607356459363016*^9}, {
+  3.607357258728813*^9, 3.6073572653203983`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Expand", "[", 
+   RowBox[{
+    TagBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      TagBox["0",
+       Quantum`Notation`zz080BraArgs,
+       BaseStyle->{ShowSyntaxStyles -> True},
+       Editable->True,
+       Selectable->True], "\[VerticalSeparator]"}],
+     Quantum`Notation`zz080Bra,
+     BaseStyle->{ShowSyntaxStyles -> False},
+     Editable->False,
+     Selectable->False], "\[CenterDot]", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"k", "=", "0"}], "2"], 
+     RowBox[{
+      FractionBox[
+       SuperscriptBox["a", "k"], 
+       RowBox[{"k", "!"}]], "\[CenterDot]", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "1"],
+       "\[CenterDot]", 
+      RowBox[{
+       UnderoverscriptBox["\[Sum]", 
+        RowBox[{"k", "=", "0"}], "2"], 
+       RowBox[{
+        FractionBox[
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"t", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-",
+                 "a"}], ")"}]}], "\[Tau]"]}], ")"}], "k"], 
+         RowBox[{"k", "!"}]], "\[CenterDot]", 
+        SuperscriptBox["a", 
+         RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+        TagBox[
+         RowBox[{"\[VerticalSeparator]", 
+          TagBox["0",
+           Quantum`Notation`zz080KetArgs,
+           BaseStyle->{ShowSyntaxStyles -> True},
+           Editable->True,
+           Selectable->True], "\[RightAngleBracket]"}],
+         Quantum`Notation`zz080Ket,
+         BaseStyle->{ShowSyntaxStyles -> False},
+         Editable->False,
+         Selectable->False]}]}]}]}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607350757479994*^9, 3.607350765524189*^9}, {
+   3.607351592242599*^9, 3.607351592335608*^9}, {3.607351622353752*^9, 
+   3.607351622993906*^9}, {3.6073532252872467`*^9, 3.607353228598748*^9}, {
+   3.607354144625148*^9, 3.607354145729463*^9}, {3.607354390377157*^9, 
+   3.607354391385017*^9}, {3.6073546014458313`*^9, 3.607354604099189*^9}, {
+   3.607354759753615*^9, 3.607354763464818*^9}, {3.6073548016099653`*^9, 
+   3.607354805931314*^9}, {3.607354896544764*^9, 3.607354904988256*^9}, {
+   3.607355208999263*^9, 3.6073552129046783`*^9}, {3.607355269883183*^9, 
+   3.607355272377768*^9}, 3.607355344093362*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Expand", "[", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{
+       TagBox[
+        RowBox[{"\[LeftAngleBracket]", 
+         TagBox["0",
+          Quantum`Notation`zz080BraArgs,
+          BaseStyle->{ShowSyntaxStyles -> True},
+          Editable->True,
+          Selectable->True], "\[VerticalSeparator]"}],
+        Quantum`Notation`zz080Bra,
+        BaseStyle->{ShowSyntaxStyles -> False},
+        Editable->False,
+        Selectable->False], "\[CenterDot]", 
+       RowBox[{
+        UnderoverscriptBox["\[Sum]", 
+         RowBox[{"k", "=", "0"}], "3"], 
+        RowBox[{
+         FractionBox[
+          SuperscriptBox["a", "k"], 
+          RowBox[{"k", "!"}]], "\[CenterDot]", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], 
+          "1"], "\[CenterDot]", 
+         RowBox[{
+          UnderoverscriptBox["\[Sum]", 
+           RowBox[{"k", "=", "0"}], "3"], 
+          RowBox[{
+           FractionBox[
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"-", 
+               FractionBox[
+                RowBox[{"t", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], 
+                   "-", "a"}], ")"}]}], "\[Tau]"]}], ")"}], "k"], 
+            RowBox[{"k", "!"}]], "\[CenterDot]", 
+           SuperscriptBox["a", 
+            RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+           TagBox[
+            RowBox[{"\[VerticalSeparator]", 
+             TagBox["0",
+              Quantum`Notation`zz080KetArgs,
+              BaseStyle->{ShowSyntaxStyles -> True},
+              Editable->True,
+              Selectable->True], "\[RightAngleBracket]"}],
+            Quantum`Notation`zz080Ket,
+            BaseStyle->{ShowSyntaxStyles -> False},
+            Editable->False,
+            Selectable->False]}]}]}]}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], "]"}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607350121319919*^9, 3.607350121982608*^9}, {
+   3.607350194067154*^9, 3.607350209988112*^9}, {3.607350246500108*^9, 
+   3.607350250402693*^9}, {3.607350333539267*^9, 3.60735033449876*^9}, {
+   3.607350382824498*^9, 3.607350428586227*^9}, {3.607350463880382*^9, 
+   3.607350532430657*^9}, {3.6073506952367697`*^9, 3.607350709012829*^9}, {
+   3.6073508991634912`*^9, 3.607350920716269*^9}, {3.607351037232442*^9, 
+   3.607351082192618*^9}, {3.6073512746004963`*^9, 3.607351334777812*^9}, {
+   3.60735145246177*^9, 3.6073514551176653`*^9}, {3.607351514815817*^9, 
+   3.6073515148797092`*^9}, {3.6073517958655643`*^9, 3.607351796520599*^9}, {
+   3.607354263206892*^9, 3.6073543064882298`*^9}, 3.607354435932822*^9, {
+   3.607354470429888*^9, 3.6073544989475183`*^9}, {3.607354873857658*^9, 
+   3.607354884941867*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Subsection"],
+ " Exact solutions after using similarity transformations to eliminate \
+exponentials of operators (manual)"
+}], "Subsection",
+ CellChangeTimes->{{3.607352819216229*^9, 3.607352871906067*^9}, {
+   3.607353001845763*^9, 3.607353008918468*^9}, 3.607353152363804*^9, {
+   3.607353191980674*^9, 3.6073531925883093`*^9}, 3.607353526519659*^9}],
+
+Cell["First moment", "Text",
+ CellChangeTimes->{{3.6073533736023703`*^9, 3.6073533751222687`*^9}}],
 
 Cell[BoxData[
  RowBox[{"Table", "[", 
@@ -472,290 +734,6 @@ Cell[BoxData[
  CellChangeTimes->{{3.60730019503647*^9, 3.607300208135434*^9}, {
   3.607302622679551*^9, 3.6073026226854877`*^9}, {3.6073392876566477`*^9, 
   3.607339287736785*^9}}],
-
-Cell[BoxData[
- RowBox[{"Table", "[", 
-  RowBox[{
-   RowBox[{
-    TagBox[
-     RowBox[{"\[LeftAngleBracket]", 
-      TagBox["0",
-       Quantum`Notation`zz080BraArgs,
-       BaseStyle->{ShowSyntaxStyles -> True},
-       Editable->True,
-       Selectable->True], "\[VerticalSeparator]"}],
-     Quantum`Notation`zz080Bra,
-     BaseStyle->{ShowSyntaxStyles -> False},
-     Editable->False,
-     Selectable->False], "\[CenterDot]", 
-    SuperscriptBox[
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{
-         SuperscriptBox["a", "\[Dagger]"], "+", "1"}], ")"}], "\[CenterDot]", 
-       "a"}], ")"}], "2"], "\[CenterDot]", 
-    SuperscriptBox[
-     RowBox[{"(", 
-      RowBox[{
-       RowBox[{
-        SuperscriptBox["a", "\[Dagger]"], 
-        SuperscriptBox["\[ExponentialE]", 
-         RowBox[{
-          RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], "+", "1"}], ")"}], "n"], 
-    "\[CenterDot]", 
-    TagBox[
-     RowBox[{"\[VerticalSeparator]", 
-      TagBox["0",
-       Quantum`Notation`zz080KetArgs,
-       BaseStyle->{ShowSyntaxStyles -> True},
-       Editable->True,
-       Selectable->True], "\[RightAngleBracket]"}],
-     Quantum`Notation`zz080Ket,
-     BaseStyle->{ShowSyntaxStyles -> False},
-     Editable->False,
-     Selectable->False]}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.607299644328803*^9, 3.6072998456081457`*^9}, {
-  3.607299942733885*^9, 3.607299951422991*^9}, {3.60730000299375*^9, 
-  3.607300006561563*^9}, {3.607300055327979*^9, 3.607300102692976*^9}, {
-  3.607302622687038*^9, 3.607302622693571*^9}, {3.607339289914873*^9, 
-  3.60733928996072*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{
-     TagBox[
-      RowBox[{"\[LeftAngleBracket]", 
-       TagBox["0",
-        Quantum`Notation`zz080BraArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[VerticalSeparator]"}],
-      Quantum`Notation`zz080Bra,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-     SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a", "\[CenterDot]", 
-     "ME2", "\[CenterDot]", 
-     SuperscriptBox["a", 
-      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["0",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607305167569152*^9, 3.607305314509441*^9}, {
-  3.607305475777125*^9, 3.607305547171221*^9}, {3.607305602920228*^9, 
-  3.6073056142632313`*^9}, {3.6073056589216948`*^9, 3.607305660010035*^9}, {
-  3.607305694552266*^9, 3.607305695498575*^9}, {3.607305813870496*^9, 
-  3.607305830975171*^9}, {3.607338305612447*^9, 3.607338317657853*^9}, {
-  3.607338429327017*^9, 3.60733842942304*^9}, {3.607339292153142*^9, 
-  3.607339292184537*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{
-   TagBox[
-    RowBox[{"\[LeftAngleBracket]", 
-     TagBox["0",
-      Quantum`Notation`zz080BraArgs,
-      BaseStyle->{ShowSyntaxStyles -> True},
-      Editable->True,
-      Selectable->True], "\[VerticalSeparator]"}],
-    Quantum`Notation`zz080Bra,
-    BaseStyle->{ShowSyntaxStyles -> False},
-    Editable->False,
-    Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-   SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a", "\[CenterDot]", 
-   "ME2", "\[CenterDot]", 
-   SuperscriptBox["a", 
-    RowBox[{"\[Dagger]", " ", "4"}]], "\[CenterDot]", 
-   TagBox[
-    RowBox[{"\[VerticalSeparator]", 
-     TagBox["0",
-      Quantum`Notation`zz080KetArgs,
-      BaseStyle->{ShowSyntaxStyles -> True},
-      Editable->True,
-      Selectable->True], "\[RightAngleBracket]"}],
-    Quantum`Notation`zz080Ket,
-    BaseStyle->{ShowSyntaxStyles -> False},
-    Editable->False,
-    Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.60733837178825*^9, 3.607338413398664*^9}, {
-  3.607338447790856*^9, 3.607338455197488*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{
-     TagBox[
-      RowBox[{"\[LeftAngleBracket]", 
-       TagBox["0",
-        Quantum`Notation`zz080BraArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[VerticalSeparator]"}],
-      Quantum`Notation`zz080Bra,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       RowBox[{
-        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "2"], 
-     "\[CenterDot]", "ME2", "\[CenterDot]", 
-     SuperscriptBox["a", 
-      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["0",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607306053596581*^9, 3.6073060624685497`*^9}, {
-  3.607339295115649*^9, 3.6073392951800528`*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{
-     TagBox[
-      RowBox[{"\[LeftAngleBracket]", 
-       TagBox["0",
-        Quantum`Notation`zz080BraArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[VerticalSeparator]"}],
-      Quantum`Notation`zz080Bra,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       RowBox[{
-        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "3"], 
-     "\[CenterDot]", "ME2", "\[CenterDot]", 
-     SuperscriptBox["a", 
-      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["0",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607306487063862*^9, 3.6073064982450666`*^9}, {
-  3.607339296875915*^9, 3.607339296922768*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{
-     TagBox[
-      RowBox[{"\[LeftAngleBracket]", 
-       TagBox["0",
-        Quantum`Notation`zz080BraArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[VerticalSeparator]"}],
-      Quantum`Notation`zz080Bra,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       RowBox[{
-        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "4"], 
-     "\[CenterDot]", "ME2", "\[CenterDot]", 
-     SuperscriptBox["a", 
-      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["0",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607306506869862*^9, 3.6073065110778008`*^9}, {
-  3.6073392985875607`*^9, 3.607339298652486*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Table", "[", 
-   RowBox[{
-    RowBox[{
-     TagBox[
-      RowBox[{"\[LeftAngleBracket]", 
-       TagBox["0",
-        Quantum`Notation`zz080BraArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[VerticalSeparator]"}],
-      Quantum`Notation`zz080Bra,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
-     SuperscriptBox[
-      RowBox[{"(", 
-       RowBox[{
-        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "5"], 
-     "\[CenterDot]", "ME2", "\[CenterDot]", 
-     SuperscriptBox["a", 
-      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
-     TagBox[
-      RowBox[{"\[VerticalSeparator]", 
-       TagBox["0",
-        Quantum`Notation`zz080KetArgs,
-        BaseStyle->{ShowSyntaxStyles -> True},
-        Editable->True,
-        Selectable->True], "\[RightAngleBracket]"}],
-      Quantum`Notation`zz080Ket,
-      BaseStyle->{ShowSyntaxStyles -> False},
-      Editable->False,
-      Selectable->False]}], ",", 
-    RowBox[{"{", 
-     RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607306525788862*^9, 3.6073065291734962`*^9}, {
-  3.607339300683592*^9, 3.607339300731723*^9}}],
 
 Cell[BoxData[
  RowBox[{"Simplify", "[", 
@@ -846,39 +824,305 @@ Cell[BoxData[
   3.607337380201416*^9, 3.607337403709589*^9}, {3.6073374951854687`*^9, 
   3.607337559892398*^9}}],
 
-Cell[BoxData[
- RowBox[{
-  RowBox[{"Series", "[", 
-   RowBox[{
-    RowBox[{
-     SuperscriptBox["\[ExponentialE]", 
-      RowBox[{"-", 
-       FractionBox["t", "\[Tau]"]}]], " ", "n"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"t", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607338208063998*^9, 3.607338236197174*^9}, {
-  3.607338476349709*^9, 3.607338488031467*^9}, {3.607338583874826*^9, 
-  3.607338584642273*^9}}],
+Cell["Second moment", "Text",
+ CellChangeTimes->{{3.6073533736023703`*^9, 3.6073533751222687`*^9}, {
+  3.607353427139476*^9, 3.607353428339526*^9}}],
 
 Cell[BoxData[
- RowBox[{
-  RowBox[{"Series", "[", 
+ RowBox[{"Table", "[", 
+  RowBox[{
    RowBox[{
+    TagBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      TagBox["0",
+       Quantum`Notation`zz080BraArgs,
+       BaseStyle->{ShowSyntaxStyles -> True},
+       Editable->True,
+       Selectable->True], "\[VerticalSeparator]"}],
+     Quantum`Notation`zz080Bra,
+     BaseStyle->{ShowSyntaxStyles -> False},
+     Editable->False,
+     Selectable->False], "\[CenterDot]", 
     SuperscriptBox[
      RowBox[{"(", 
-      RowBox[{"1", "+", "x"}], ")"}], "n"], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "0", ",", "3"}], "}"}]}], "]"}], 
-  "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.607341769725101*^9, 3.607341791735557*^9}}],
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], "+", "1"}], ")"}], "\[CenterDot]", 
+       "a"}], ")"}], "2"], "\[CenterDot]", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["a", "\[Dagger]"], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], "+", "1"}], ")"}], "n"], 
+    "\[CenterDot]", 
+    TagBox[
+     RowBox[{"\[VerticalSeparator]", 
+      TagBox["0",
+       Quantum`Notation`zz080KetArgs,
+       BaseStyle->{ShowSyntaxStyles -> True},
+       Editable->True,
+       Selectable->True], "\[RightAngleBracket]"}],
+     Quantum`Notation`zz080Ket,
+     BaseStyle->{ShowSyntaxStyles -> False},
+     Editable->False,
+     Selectable->False]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "0", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.607299644328803*^9, 3.6072998456081457`*^9}, {
+  3.607299942733885*^9, 3.607299951422991*^9}, {3.60730000299375*^9, 
+  3.607300006561563*^9}, {3.607300055327979*^9, 3.607300102692976*^9}, {
+  3.607302622687038*^9, 3.607302622693571*^9}, {3.607339289914873*^9, 
+  3.60733928996072*^9}}],
 
-Cell[BoxData["\[IndentingNewLine]"], "Input",
- CellChangeTimes->{
-  3.607341794400283*^9, {3.607341853721971*^9, 3.6073418615942907`*^9}}]
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["a", "\[Dagger]"], "+", "1"}], ")"}], "\[CenterDot]",
+         "a"}], ")"}], "2"], "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], "+", "1"}], ")"}], "n"], 
+     "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{
+     RowBox[{"n", "\[Element]", "Integers"}], " ", "&&", " ", 
+     RowBox[{"n", ">", "0"}]}]}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6073520294167757`*^9, 3.607352058890835*^9}, {
+  3.607355178994479*^9, 3.607355191314053*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   TagBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     TagBox["0",
+      Quantum`Notation`zz080BraArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[VerticalSeparator]"}],
+    Quantum`Notation`zz080Bra,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False], "\[CenterDot]", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"a", "+", 
+      RowBox[{
+       SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}]}], ")"}], "2"],
+    "\[CenterDot]", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Normal", "[", 
+      RowBox[{"Series", "[", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "x"}], ")"}], "n"], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}], "]"}], "/.", 
+     RowBox[{"x", "\[Rule]", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox["t", "\[Tau]"]}]], " ", 
+       SuperscriptBox["a", "\[Dagger]"]}]}]}], ")"}], "\[CenterDot]", 
+   TagBox[
+    RowBox[{"\[VerticalSeparator]", 
+     TagBox["0",
+      Quantum`Notation`zz080KetArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[RightAngleBracket]"}],
+    Quantum`Notation`zz080Ket,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607352077719769*^9, 3.6073521082366037`*^9}}],
+
+Cell["Third moment", "Text",
+ CellChangeTimes->{{3.6073533736023703`*^9, 3.6073533751222687`*^9}, {
+  3.6073534310916862`*^9, 3.607353431796294*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox["a", "\[Dagger]"], "+", "1"}], ")"}], "\[CenterDot]",
+         "a"}], ")"}], "3"], "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], "+", "1"}], ")"}], "n"], 
+     "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{
+     RowBox[{"n", "\[Element]", "Integers"}], " ", "&&", " ", 
+     RowBox[{"n", ">", "0"}]}]}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607352132660335*^9, 3.607352136492959*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   TagBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     TagBox["0",
+      Quantum`Notation`zz080BraArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[VerticalSeparator]"}],
+    Quantum`Notation`zz080Bra,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False], "\[CenterDot]", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"a", "+", 
+      RowBox[{
+       SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}]}], ")"}], "3"],
+    "\[CenterDot]", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"Normal", "[", 
+      RowBox[{"Series", "[", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "x"}], ")"}], "n"], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}], "]"}], "/.", 
+     RowBox[{"x", "\[Rule]", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox["t", "\[Tau]"]}]], " ", 
+       SuperscriptBox["a", "\[Dagger]"]}]}]}], ")"}], "\[CenterDot]", 
+   TagBox[
+    RowBox[{"\[VerticalSeparator]", 
+     TagBox["0",
+      Quantum`Notation`zz080KetArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[RightAngleBracket]"}],
+    Quantum`Notation`zz080Ket,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607352158629634*^9, 3.607352162001498*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Section"],
+ " Questions"
+}], "Section",
+ CellChangeTimes->{{3.6073587058730516`*^9, 3.607358741185513*^9}}],
+
+Cell["Should this evaluate to |k>?", "Text",
+ CellChangeTimes->{{3.607353595369506*^9, 3.607353606617815*^9}, {
+  3.607355893925291*^9, 3.607355897093103*^9}, {3.6073586626557713`*^9, 
+  3.607358666128345*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "k"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], ",", 
+    RowBox[{
+     RowBox[{"k", "\[Element]", "Integers"}], " ", "&&", " ", 
+     RowBox[{"k", " ", ">", "0"}]}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607349137199003*^9, 3.607349145002186*^9}, {
+  3.607349187163907*^9, 3.607349188107593*^9}, {3.607349412835147*^9, 
+  3.607349443347509*^9}, {3.60734954039151*^9, 3.6073495584418173`*^9}}]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{960, 1148},
-WindowMargins->{{955, Automatic}, {Automatic, 0}},
+WindowMargins->{{953, Automatic}, {Automatic, 0}},
 InputAliases->{
  "on" -> "\[CenterDot]", "tp" -> "\[CircleTimes]", "op" -> 
   OverscriptBox["\[Placeholder]", "^"], "her" -> SuperscriptBox[
@@ -1161,13 +1405,10 @@ InputAliases->{
       "\[Placeholder]", Quantum`Notation`zz020TPNotationdat, Editable -> True,
         Selectable -> True]}], Quantum`Notation`zz020TPNotation, Editable -> 
     False, Selectable -> False]},
+Magnification:>1.25 Inherited,
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
-StyleDefinitions->Notebook[{
-   Cell[
-    StyleData[StyleDefinitions -> "Default.nb"]]}, 
-  WindowMargins -> {{893, Automatic}, {Automatic, 135}}, Visible -> False, 
-  FrontEndVersion -> "9.0 for Linux x86 (64-bit) (February 7, 2013)", 
-  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -1180,38 +1421,68 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 200, 3, 32, "Input"],
-Cell[760, 25, 201, 5, 32, "Input"],
-Cell[964, 32, 1155, 31, 34, "Input"],
-Cell[2122, 65, 1198, 32, 35, "Input"],
-Cell[3323, 99, 1010, 29, 34, "Input"],
-Cell[4336, 130, 453, 14, 35, "Input"],
-Cell[4792, 146, 948, 28, 37, "Input"],
-Cell[5743, 176, 923, 28, 38, InheritFromParent],
-Cell[6669, 206, 1283, 36, 78, "Input"],
-Cell[7955, 244, 276, 8, 59, "Input"],
-Cell[8234, 254, 284, 8, 59, "Input"],
-Cell[8521, 264, 361, 10, 59, "Input"],
-Cell[8885, 276, 839, 25, 59, "Input"],
-Cell[9727, 303, 356, 10, 37, "Input"],
-Cell[10086, 315, 658, 19, 59, "Input"],
-Cell[10747, 336, 1098, 32, 59, "Input"],
-Cell[11848, 370, 496, 12, 55, "Input"],
-Cell[12347, 384, 600, 16, 55, "Input"],
-Cell[12950, 402, 906, 26, 56, "Input"],
-Cell[13859, 430, 1440, 43, 37, "Input"],
-Cell[15302, 475, 1662, 48, 37, "Input"],
-Cell[16967, 525, 1599, 40, 57, "Input"],
-Cell[18569, 567, 1084, 30, 58, "Input"],
-Cell[19656, 599, 1338, 38, 59, "Input"],
-Cell[20997, 639, 1336, 38, 59, "Input"],
-Cell[22336, 679, 1338, 38, 59, "Input"],
-Cell[23677, 719, 1336, 38, 59, "Input"],
-Cell[25016, 759, 1384, 42, 37, "Input"],
-Cell[26403, 803, 1466, 43, 73, "Input"],
-Cell[27872, 848, 466, 13, 70, "Input"],
-Cell[28341, 863, 328, 10, 57, "Input"],
-Cell[28672, 875, 138, 2, 55, "Input"]
+Cell[CellGroupData[{
+Cell[579, 22, 208, 3, 114, "Title"],
+Cell[790, 27, 120, 4, 64, "Text"],
+Cell[CellGroupData[{
+Cell[935, 35, 226, 7, 148, "Section"],
+Cell[1164, 44, 200, 3, 50, "Input"],
+Cell[1367, 49, 201, 5, 50, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1605, 59, 195, 6, 103, "Section"],
+Cell[1803, 67, 1155, 31, 52, "Input"],
+Cell[2961, 100, 1198, 32, 53, "Input"],
+Cell[4162, 134, 1010, 29, 52, "Input"],
+Cell[5175, 165, 453, 14, 53, "Input"],
+Cell[5631, 181, 151, 2, 39, "Text"],
+Cell[5785, 185, 1283, 36, 103, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7105, 226, 207, 6, 103, "Section"],
+Cell[CellGroupData[{
+Cell[7337, 236, 314, 7, 41, "Subsection"],
+Cell[CellGroupData[{
+Cell[7676, 247, 334, 7, 39, "Subsubsection"],
+Cell[8013, 256, 496, 12, 76, "Input"],
+Cell[8512, 270, 906, 26, 78, "Input"],
+Cell[9421, 298, 600, 16, 74, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10058, 319, 246, 7, 70, "Subsubsection"],
+Cell[10307, 328, 98, 1, 38, "Text"],
+Cell[10408, 331, 1645, 40, 79, "Input"],
+Cell[12056, 373, 97, 1, 38, "Text"],
+Cell[12156, 376, 1338, 38, 81, "Input"],
+Cell[13497, 416, 94, 1, 38, "Text"],
+Cell[13594, 419, 1336, 38, 81, "Input"],
+Cell[14933, 459, 155, 3, 39, "Text"],
+Cell[15091, 464, 2298, 67, 197, "Input"],
+Cell[17392, 533, 2485, 65, 138, "Input"],
+Cell[19880, 600, 3008, 73, 223, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22937, 679, 383, 8, 74, "Subsection"],
+Cell[23323, 689, 98, 1, 38, "Text"],
+Cell[23424, 692, 1440, 43, 56, "Input"],
+Cell[24867, 737, 1384, 42, 56, "Input"],
+Cell[26254, 781, 1466, 43, 101, "Input"],
+Cell[27723, 826, 148, 2, 38, "Text"],
+Cell[27874, 830, 1662, 48, 56, "Input"],
+Cell[29539, 880, 1595, 47, 82, "Input"],
+Cell[31137, 929, 1539, 47, 101, "Input"],
+Cell[32679, 978, 149, 2, 38, "Text"],
+Cell[32831, 982, 1544, 46, 82, "Input"],
+Cell[34378, 1030, 1537, 47, 101, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35964, 1083, 138, 5, 103, "Section"],
+Cell[36105, 1090, 210, 3, 39, "Text"],
+Cell[36318, 1095, 900, 24, 82, "Input"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
