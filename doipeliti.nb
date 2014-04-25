@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     53535,       1481]
-NotebookOptionsPosition[     37246,       1123]
-NotebookOutlinePosition[     51613,       1422]
-CellTagsIndexPosition[     51570,       1419]
+NotebookDataLength[     61809,       1727]
+NotebookOptionsPosition[     45193,       1361]
+NotebookOutlinePosition[     59560,       1660]
+CellTagsIndexPosition[     59517,       1657]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -295,6 +295,35 @@ Cell[BoxData[
     Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.607300971100095*^9, 3.607301068416277*^9}, {
   3.607302591059327*^9, 3.6073025947234697`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   TagBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     TagBox["0",
+      Quantum`Notation`zz080BraArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[VerticalSeparator]"}],
+    Quantum`Notation`zz080Bra,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False], "\[CenterDot]", "ME", "\[CenterDot]", 
+   SuperscriptBox["a", 
+    RowBox[{"\[Dagger]", " ", "4"}]], "\[CenterDot]", 
+   TagBox[
+    RowBox[{"\[VerticalSeparator]", 
+     TagBox["0",
+      Quantum`Notation`zz080KetArgs,
+      BaseStyle->{ShowSyntaxStyles -> True},
+      Editable->True,
+      Selectable->True], "\[RightAngleBracket]"}],
+    Quantum`Notation`zz080Ket,
+    BaseStyle->{ShowSyntaxStyles -> False},
+    Editable->False,
+    Selectable->False]}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607388602290523*^9, 3.60738873314835*^9}}],
 
 Cell[BoxData[
  RowBox[{"ME2", "=", 
@@ -1088,10 +1117,10 @@ Cell[TextData[{
 }], "Section",
  CellChangeTimes->{{3.6073587058730516`*^9, 3.607358741185513*^9}}],
 
-Cell["Should this evaluate to |k>?", "Text",
+Cell["Should this evaluate to |k> ?", "Text",
  CellChangeTimes->{{3.607353595369506*^9, 3.607353606617815*^9}, {
-  3.607355893925291*^9, 3.607355897093103*^9}, {3.6073586626557713`*^9, 
-  3.607358666128345*^9}}],
+   3.607355893925291*^9, 3.607355897093103*^9}, {3.6073586626557713`*^9, 
+   3.607358666128345*^9}, 3.607389307419132*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1113,11 +1142,220 @@ Cell[BoxData[
       Selectable->False]}], ",", 
     RowBox[{
      RowBox[{"k", "\[Element]", "Integers"}], " ", "&&", " ", 
-     RowBox[{"k", " ", ">", "0"}]}]}], "]"}], 
+     RowBox[{"k", " ", "\[GreaterEqual]", "0"}]}]}], "]"}], 
   "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.607349137199003*^9, 3.607349145002186*^9}, {
-  3.607349187163907*^9, 3.607349188107593*^9}, {3.607349412835147*^9, 
-  3.607349443347509*^9}, {3.60734954039151*^9, 3.6073495584418173`*^9}}]
+   3.607349187163907*^9, 3.607349188107593*^9}, {3.607349412835147*^9, 
+   3.607349443347509*^9}, {3.60734954039151*^9, 3.6073495584418173`*^9}, 
+   3.60738939194026*^9}],
+
+Cell["\<\
+Should this evaluate to p!(p-1)! ?\
+\>", "Text",
+ CellChangeTimes->{{3.607389293258955*^9, 3.607389304906604*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      TagBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        TagBox["0",
+         Quantum`Notation`zz080BraArgs,
+         BaseStyle->{ShowSyntaxStyles -> True},
+         Editable->True,
+         Selectable->True], "\[VerticalSeparator]"}],
+       Quantum`Notation`zz080Bra,
+       BaseStyle->{ShowSyntaxStyles -> False},
+       Editable->False,
+       Selectable->False], " ", "\[CenterDot]", "a", "\[CenterDot]", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["a", "\[Dagger]"], 
+         SuperscriptBox["a", "2"]}], ")"}], 
+       RowBox[{"p", "-", "1"}]]}], 
+     RowBox[{
+      SuperscriptBox["a", 
+       RowBox[{"\[Dagger]", " ", "p"}]], "\[CenterDot]", 
+      TagBox[
+       RowBox[{"\[VerticalSeparator]", 
+        TagBox["0",
+         Quantum`Notation`zz080KetArgs,
+         BaseStyle->{ShowSyntaxStyles -> True},
+         Editable->True,
+         Selectable->True], "\[RightAngleBracket]"}],
+       Quantum`Notation`zz080Ket,
+       BaseStyle->{ShowSyntaxStyles -> False},
+       Editable->False,
+       Selectable->False]}]}], ",", 
+    RowBox[{
+     RowBox[{"p", "\[Element]", "Integers"}], " ", "&&", " ", 
+     RowBox[{"p", " ", "\[GreaterEqual]", "0"}]}]}], "]"}], 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.607389220033246*^9, 3.607389277502536*^9}, {
+  3.607389328033269*^9, 3.607389376851246*^9}}],
+
+Cell["\<\
+Is there any way that this \[LeftAngleBracket]0\[VerticalSeparator]\
+\[CenterDot]E^a\[CenterDot]a^\[Dagger]\[CenterDot]a\[CenterDot]E^((t (a-a^\
+\[Dagger]\[CenterDot]a))/\[Tau])\[CenterDot](a^\[Dagger])^n\[CenterDot]\
+\[VerticalSeparator]0\[RightAngleBracket] could be evaluated to \
+\[LeftAngleBracket]0\[VerticalSeparator]\[CenterDot](a^\[Dagger]+1)\
+\[CenterDot]a\[CenterDot](a^\[Dagger] E^(-t/\[Tau])+1)^n\[CenterDot]\
+\[VerticalSeparator]0\[RightAngleBracket] ? How can one define and use \
+similarity transformations that would enable this?\
+\>", "Text",
+ CellChangeTimes->{{3.607390164138074*^9, 3.607390180393198*^9}, {
+   3.6073903836881933`*^9, 3.6073903890398197`*^9}, {3.60739065455241*^9, 
+   3.607390669092413*^9}, 3.607390709817834*^9, {3.607390750412891*^9, 
+   3.607390793755795*^9}}],
+
+Cell["\<\
+Is there any way that this could be evaluated to E^(-(t/\[Tau])) n as in line \
+20?\
+\>", "Text",
+ CellChangeTimes->{{3.607389465156581*^9, 3.6073895608031178`*^9}, {
+  3.6073908136132317`*^9, 3.607390813804715*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Simplify", "[", 
+   RowBox[{"Expand", "[", 
+    RowBox[{
+     TagBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       TagBox["0",
+        Quantum`Notation`zz080BraArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[VerticalSeparator]"}],
+      Quantum`Notation`zz080Bra,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False], "\[CenterDot]", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       StyleBox[
+        FractionBox[
+         SuperscriptBox[
+          RowBox[{"(", "a", ")"}], "k"], 
+         RowBox[{"k", "!"}]],
+        FontSize->8], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+     "\[CenterDot]", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "1"], 
+     "\[CenterDot]", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       StyleBox[
+        FractionBox[
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{"t", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-",
+                 "a"}], ")"}]}], "\[Tau]"]}], ")"}], "k"], 
+         RowBox[{"k", "!"}]],
+        FontSize->8], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+     "\[CenterDot]", 
+     SuperscriptBox["a", 
+      RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+     TagBox[
+      RowBox[{"\[VerticalSeparator]", 
+       TagBox["0",
+        Quantum`Notation`zz080KetArgs,
+        BaseStyle->{ShowSyntaxStyles -> True},
+        Editable->True,
+        Selectable->True], "\[RightAngleBracket]"}],
+      Quantum`Notation`zz080Ket,
+      BaseStyle->{ShowSyntaxStyles -> False},
+      Editable->False,
+      Selectable->False]}], "]"}], "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.6073894466011057`*^9, 3.607389448150813*^9}}],
+
+Cell["\<\
+Similarly, could this be evaluated to E^(-(t/\[Tau])) n+E^(-((2 t)/\[Tau])) \
+(-n+n^2) as in line 23?\
+\>", "Text",
+ CellChangeTimes->{{3.607389584644436*^9, 3.607389628165538*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{"Expand", "[", 
+   RowBox[{
+    TagBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      TagBox["0",
+       Quantum`Notation`zz080BraArgs,
+       BaseStyle->{ShowSyntaxStyles -> True},
+       Editable->True,
+       Selectable->True], "\[VerticalSeparator]"}],
+     Quantum`Notation`zz080Bra,
+     BaseStyle->{ShowSyntaxStyles -> False},
+     Editable->False,
+     Selectable->False], "\[CenterDot]", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      StyleBox[
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", "a", ")"}], "k"], 
+        RowBox[{"k", "!"}]],
+       FontSize->8], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+    "\[CenterDot]", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], ")"}], "2"], 
+    "\[CenterDot]", 
+    RowBox[{"Sum", "[", 
+     RowBox[{
+      StyleBox[
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"-", 
+           FractionBox[
+            RowBox[{"t", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SuperscriptBox["a", "\[Dagger]"], "\[CenterDot]", "a"}], "-", 
+               "a"}], ")"}]}], "\[Tau]"]}], ")"}], "k"], 
+        RowBox[{"k", "!"}]],
+       FontSize->8], ",", 
+      RowBox[{"{", 
+       RowBox[{"k", ",", "0", ",", "\[Infinity]"}], "}"}]}], "]"}], 
+    "\[CenterDot]", 
+    SuperscriptBox["a", 
+     RowBox[{"\[Dagger]", " ", "n"}]], "\[CenterDot]", 
+    TagBox[
+     RowBox[{"\[VerticalSeparator]", 
+      TagBox["0",
+       Quantum`Notation`zz080KetArgs,
+       BaseStyle->{ShowSyntaxStyles -> True},
+       Editable->True,
+       Selectable->True], "\[RightAngleBracket]"}],
+     Quantum`Notation`zz080Ket,
+     BaseStyle->{ShowSyntaxStyles -> False},
+     Editable->False,
+     Selectable->False]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.607389575648477*^9, 3.607389575727601*^9}}]
 }, Open  ]]
 }, Open  ]]
 },
@@ -1446,41 +1684,49 @@ Cell[CellGroupData[{
 Cell[7676, 247, 334, 7, 39, "Subsubsection"],
 Cell[8013, 256, 496, 12, 76, "Input"],
 Cell[8512, 270, 906, 26, 78, "Input"],
-Cell[9421, 298, 600, 16, 74, "Input"]
+Cell[9421, 298, 933, 27, 80, "Input"],
+Cell[10357, 327, 600, 16, 74, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[10058, 319, 246, 7, 70, "Subsubsection"],
-Cell[10307, 328, 98, 1, 38, "Text"],
-Cell[10408, 331, 1645, 40, 79, "Input"],
-Cell[12056, 373, 97, 1, 38, "Text"],
-Cell[12156, 376, 1338, 38, 81, "Input"],
-Cell[13497, 416, 94, 1, 38, "Text"],
-Cell[13594, 419, 1336, 38, 81, "Input"],
-Cell[14933, 459, 155, 3, 39, "Text"],
-Cell[15091, 464, 2298, 67, 197, "Input"],
-Cell[17392, 533, 2485, 65, 138, "Input"],
-Cell[19880, 600, 3008, 73, 223, "Input"]
+Cell[10994, 348, 246, 7, 70, "Subsubsection"],
+Cell[11243, 357, 98, 1, 38, "Text"],
+Cell[11344, 360, 1645, 40, 79, "Input"],
+Cell[12992, 402, 97, 1, 38, "Text"],
+Cell[13092, 405, 1338, 38, 81, "Input"],
+Cell[14433, 445, 94, 1, 38, "Text"],
+Cell[14530, 448, 1336, 38, 81, "Input"],
+Cell[15869, 488, 155, 3, 39, "Text"],
+Cell[16027, 493, 2298, 67, 197, "Input"],
+Cell[18328, 562, 2485, 65, 138, "Input"],
+Cell[20816, 629, 3008, 73, 223, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22937, 679, 383, 8, 74, "Subsection"],
-Cell[23323, 689, 98, 1, 38, "Text"],
-Cell[23424, 692, 1440, 43, 56, "Input"],
-Cell[24867, 737, 1384, 42, 56, "Input"],
-Cell[26254, 781, 1466, 43, 101, "Input"],
-Cell[27723, 826, 148, 2, 38, "Text"],
-Cell[27874, 830, 1662, 48, 56, "Input"],
-Cell[29539, 880, 1595, 47, 82, "Input"],
-Cell[31137, 929, 1539, 47, 101, "Input"],
-Cell[32679, 978, 149, 2, 38, "Text"],
-Cell[32831, 982, 1544, 46, 82, "Input"],
-Cell[34378, 1030, 1537, 47, 101, "Input"]
+Cell[23873, 708, 383, 8, 74, "Subsection"],
+Cell[24259, 718, 98, 1, 38, "Text"],
+Cell[24360, 721, 1440, 43, 56, "Input"],
+Cell[25803, 766, 1384, 42, 56, "Input"],
+Cell[27190, 810, 1466, 43, 101, "Input"],
+Cell[28659, 855, 148, 2, 38, "Text"],
+Cell[28810, 859, 1662, 48, 56, "Input"],
+Cell[30475, 909, 1595, 47, 82, "Input"],
+Cell[32073, 958, 1539, 47, 101, "Input"],
+Cell[33615, 1007, 149, 2, 38, "Text"],
+Cell[33767, 1011, 1544, 46, 82, "Input"],
+Cell[35314, 1059, 1537, 47, 101, "Input"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[35964, 1083, 138, 5, 103, "Section"],
-Cell[36105, 1090, 210, 3, 39, "Text"],
-Cell[36318, 1095, 900, 24, 82, "Input"]
+Cell[36900, 1112, 138, 5, 103, "Section"],
+Cell[37041, 1119, 235, 3, 39, "Text"],
+Cell[37279, 1124, 941, 25, 82, "Input"],
+Cell[38223, 1151, 124, 3, 39, "Text"],
+Cell[38350, 1156, 1461, 42, 81, "Input"],
+Cell[39814, 1200, 811, 13, 90, "Text"],
+Cell[40628, 1215, 226, 5, 39, "Text"],
+Cell[40857, 1222, 2105, 64, 195, "Input"],
+Cell[42965, 1288, 191, 4, 39, "Text"],
+Cell[43159, 1294, 2006, 63, 168, "Input"]
 }, Open  ]]
 }, Open  ]]
 }
