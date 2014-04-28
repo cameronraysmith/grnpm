@@ -10,14 +10,44 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     28525,        766]
-NotebookOptionsPosition[     27797,        741]
-NotebookOutlinePosition[     28134,        756]
-CellTagsIndexPosition[     28091,        753]
+NotebookDataLength[     29644,        807]
+NotebookOptionsPosition[     28630,        773]
+NotebookOutlinePosition[     29069,        790]
+CellTagsIndexPosition[     29026,        787]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Replicator-mutator dynamics",
+ StyleBox["\t", "Text",
+  FontColor->GrayLevel[0]]
+}], "Title",
+ CellChangeTimes->{{3.6076854208002453`*^9, 3.607685475480825*^9}, {
+  3.6076855205244093`*^9, 3.607685637534422*^9}}],
+
+Cell[TextData[{
+ StyleBox["\t", "Text"],
+ StyleBox["From \
+http://demonstrations.wolfram.com/\
+ReplicatorMutatorDynamicsWithThreeStrategies/ \n\tmodified by Cameron Smith\n\
+\tApril 18th, 2014", "Text",
+  FontColor->GrayLevel[0]]
+}], "Text",
+ CellChangeTimes->{{3.607685640393737*^9, 3.6076856498068123`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ 
+ CounterBox["Section"],
+ " Set parameters and define functions"
+}], "Section",
+ CellChangeTimes->{{3.6076856740632133`*^9, 3.6076856786075277`*^9}, {
+  3.607686268347851*^9, 3.6076862847067423`*^9}}],
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{"tMax", "=", "10"}], ";"}], "\[IndentingNewLine]", 
@@ -738,11 +768,15 @@ Cell[BoxData[
  CellChangeTimes->{{3.606689250529724*^9, 3.60668925139091*^9}, {
   3.606689284103352*^9, 3.606689285333178*^9}, {3.6066918886124163`*^9, 
   3.606691898180563*^9}}]
+}, Open  ]]
+}, Open  ]]
 },
-WindowSize->{960, 1148},
-WindowMargins->{{Automatic, 952}, {Automatic, 0}},
+WindowSize->{960, 1147},
+WindowMargins->{{Automatic, 951}, {Automatic, 0}},
+Magnification:>1.25 Inherited,
 FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
-StyleDefinitions->"Default.nb"
+StyleDefinitions->FrontEnd`FileName[{"Report"}, "StandardReport.nb", 
+  CharacterEncoding -> "UTF-8"]
 ]
 (* End of Notebook Content *)
 
@@ -755,19 +789,26 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[557, 20, 5210, 152, 461, "Input"],
-Cell[5770, 174, 960, 20, 99, "Input"],
-Cell[6733, 196, 1720, 41, 178, "Input"],
-Cell[8456, 239, 1219, 28, 130, "Input"],
-Cell[9678, 269, 1223, 28, 142, "Input"],
-Cell[10904, 299, 1319, 32, 99, "Input"],
-Cell[12226, 333, 722, 14, 55, "Input"],
-Cell[12951, 349, 2362, 63, 300, "Input"],
-Cell[15316, 414, 1159, 27, 77, "Input"],
-Cell[16478, 443, 3614, 95, 287, "Input"],
-Cell[20095, 540, 3160, 88, 242, "Input"],
-Cell[23258, 630, 458, 9, 32, "Input"],
-Cell[23719, 641, 4074, 98, 275, "Input"]
+Cell[CellGroupData[{
+Cell[579, 22, 230, 6, 114, "Title"],
+Cell[812, 30, 309, 8, 91, "Text"],
+Cell[CellGroupData[{
+Cell[1146, 42, 217, 6, 103, "Section"],
+Cell[1366, 50, 5210, 152, 633, "Input"],
+Cell[6579, 204, 960, 20, 126, "Input"],
+Cell[7542, 226, 1720, 41, 226, "Input"],
+Cell[9265, 269, 1219, 28, 160, "Input"],
+Cell[10487, 299, 1223, 28, 245, "Input"],
+Cell[11713, 329, 1319, 32, 126, "Input"],
+Cell[13035, 363, 722, 14, 101, "Input"],
+Cell[13760, 379, 2362, 63, 335, "Input"],
+Cell[16125, 444, 1159, 27, 126, "Input"],
+Cell[17287, 473, 3614, 95, 345, "Input"],
+Cell[20904, 570, 3160, 88, 318, "Input"],
+Cell[24067, 660, 458, 9, 50, "Input"],
+Cell[24528, 671, 4074, 98, 376, "Input"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
